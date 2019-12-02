@@ -14,7 +14,7 @@ public abstract class Jet {
 	}
 
 	public void fly() {
-		
+		System.out.println(this.model + " with the speed of " + this.speed + " and the range of " + this.range + " can fly for " + (Math.round((this.range/this.speed) * 10) / 10.0) + " hours");
 	}
 
 	public double getSpeedInMach() {
@@ -52,5 +52,12 @@ public abstract class Jet {
 	public void setPrice(long price) {
 		this.price = price;
 	}
+
+	@Override
+	public String toString() {
+		return "Jet [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+	}
+	
+	
 
 }
