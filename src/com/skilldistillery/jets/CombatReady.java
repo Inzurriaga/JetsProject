@@ -1,5 +1,5 @@
 package com.skilldistillery.jets;
 
 public interface CombatReady {
-	void flight();
+	void fight();
 }
